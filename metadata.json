@@ -1,0 +1,7 @@
+{
+  "name": "Showa Nihongo (昭和日本語)",
+  "description": "A retro-styled Japanese learning application featuring vocabulary generation, AI tutoring, and pronunciation practice.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

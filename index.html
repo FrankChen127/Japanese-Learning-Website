@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>日文學習</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              showa: {
+                bg: '#F4F1EA', // Aged paper
+                red: '#BF3946', // Traditional stamp red
+                blue: '#1F3C88', // Indigo
+                brown: '#4A3B32', // Dark wood/ink
+                gold: '#D4AF37',
+                paper: '#FFFDF5'
+              }
+            },
+            fontFamily: {
+              serif: ['"Shippori Mincho"', '"Noto Serif JP"', 'serif'],
+            },
+            backgroundImage: {
+              'paper-pattern': "url('https://www.transparenttextures.com/patterns/cream-paper.png')",
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        font-size: 18px; /* Increased base font size */
+      }
+      body {
+        background-color: #F4F1EA;
+        color: #4A3B32;
+        font-family: 'Shippori Mincho', serif;
+      }
+      .tategaki {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+      }
+      /* Custom Scrollbar for retro feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #F4F1EA; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #BF3946; 
+        border-radius: 4px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
